@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+section{
+    height: 80vh;
+}
+section{
+    
+    display: flex;
+    color: #285A84;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    font-size: 60px;
+}
+
+.main{
+    background-color: #285A84;
+    
+    padding: 15px;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.links2 a{
+    text-decoration: none;
+    padding: 0 30px 0 30px;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.title{
+    font-size: 12px;
+    letter-spacing: 0.2px; 
+    font-family: 'Libre Baskerville', serif; 
+}
+
+.grid1{
+    margin-left: 80px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.links2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.nav-center{
+    padding-top:10px;
+}
+
+.sub-title{
+    font-size: 12px;
+    font-family: 'Playfair Display', serif;
+}
+
+#footer{
+    background-color: #285A84;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+li{
+    list-style: none;
+}
+.container-fluid a{
+    color: #FFFFFF;
+}
+
+.social-icon {
+    align-items: center;
+  margin: 5px;
+}
+
+.pulseEffect{
+    margin-top: 30px;
+    text-align: center;
+    padding: 12px 24px;
+    color: #FFFFFF;
+    border-radius: 15px;
+    background: #285A84;
+    box-shadow: 0 0 0 0 rgba(14, 213, 240, 0.7);
+    animation: peffect 1.72s infinite
+    cubic-bezier(0.66,0,0,1);
+}
+.pulseEffect2{
+    margin-top: 30px;
+    text-align: center;
+    padding: 12px 24px;
+    color: #FFFFFF;
+    border-radius: 15px;
+    background: #285A84;
+    
+}
+
+@keyframes peffect{
+    to{
+        box-shadow: 0 0 0 30px rgba(30, 221, 23, 0);
+    }
+}
+
+ a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.div-donate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #285A84;
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+
+}
+
+img{
+    margin: 20px;
+    border-radius:100px;
+    background-color: #FFFFFF;
+    height: 60px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.active,.nav-center li :hover{
+    border: 1p;
+     text-decoration: underline;
+}
+
+.nav-toggole{
+    display: none;
+}
+
+.contact-btn{
+    display: none;
+}
+
+html{
+    animation-name: fade-in;
+	animation-duration: 2s;	
+}
+
+@keyframes fade-in {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@media screen and (max-width:900px){
+
+    .grid2{
+        display: none;
+    }
+    h2{
+        font-size: 37px;
+    }
+    
+
+    .main{
+        display: flex;
+        justify-content: space-between;
+    }
+    .grid1{
+       margin-left: 25px;
+    }
+    section{
+        margin: 20px;
+    }
+
+    .contact-btn{
+        display: contents;
+    }
+    .donate-btn{
+        display: flex;
+    }
+    .pulseEffect,.pulseEffect2 {
+        margin: 20px;
+    }
+    
+}
+@media screen and (max-width:700px){
+
+    .grid2{
+        display: none;
+    }
+    h2{
+        font-size: 30px;
+    }
+    
+
+    .main{
+        display: flex;
+        justify-content: space-between;
+    }
+    .grid1{
+       margin-left: 25px;
+    }
+    section{
+        margin: 20px;
+    }
+    .contact-btn{
+        display: contents;
+    }
+    .donate-btn{
+        display: flex;
+    }
+    .pulseEffect,.pulseEffect{
+        margin: 20px;
+    }
+    
+    
+}
+
